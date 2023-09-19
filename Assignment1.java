@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.util.Random;
 
 public class Assignment1 {
   //----------------------------------------------
@@ -20,11 +21,29 @@ public class Assignment1 {
 
     Scanner input = new Scanner(System.in);
 
-    System.out.println("Please input a degree in Fahrenheit to convert to Celsius: ");
+    System.out.println("Please input a degree in Fahrenheit to convert to Celsius: "); // This line is asking for the user to input a number.
     double fahrenheit = input.nextDouble();
 
-    double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0);
-    System.out.println(fahrenheit + " degrees in Fahrenheit is equivalent to " + celsius + " in Celsius.");
+
+    double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0); // Equation for converting F to C
+
+    System.out.println("Good job"); // Filler for now; will delete at the end
+    System.out.println("                       ");
+
+    Scanner string = new Scanner(System.in);
+
+    System.out.println("Next, please input a 5-character string:"); //Prompts user for 5 characters
+    String character = string.nextLine();
+
+    String result = character.substring(1,4); // Removes first and last character in the string
+
+    System.out.println("Generating random number...");
+
+
+
+
+
+
     }
 }
 
