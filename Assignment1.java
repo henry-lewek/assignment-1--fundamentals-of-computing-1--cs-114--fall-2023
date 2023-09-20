@@ -16,9 +16,6 @@ public class Assignment1 {
     int max;
     int random_int;
 
-
-
-
     System.out.println("                       "); // Placing space before printing to look cleaner in terminal.
 
     System.out.println("HHHHH    HHHHH   LLLLLL");
