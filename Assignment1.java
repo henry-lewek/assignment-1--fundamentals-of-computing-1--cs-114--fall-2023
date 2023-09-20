@@ -25,25 +25,25 @@ public class Assignment1 {
     double fahrenheit = input.nextDouble();
 
 
-    double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0); // Equation for converting F to C
+    double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0); // Equation for converting F to C.
 
     System.out.println("                       ");
 
     Scanner string = new Scanner(System.in);
 
-    System.out.println("Next, please input a 5-character string:"); //Prompts user for 5 characters
+    System.out.println("Next, please input a 5-character string:"); //Prompts user for 5 characters.
     String character = string.nextLine();
 
-    String result = character.substring(1,4); // Removes first and last character in the string
-    String reverse = new StringBuilder(result).reverse().toString();
+    String result = character.substring(1,4); // Removes first and last character in the string.
+    String reverse = new StringBuilder(result).reverse().toString(); // Reverses string.
 
     System.out.println("Generating random number...");
 
     int min = 32; // Minimum value of range
     int max = 16384; // Maximum value of range
-    int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min); // Generates random int value from min to max
+    int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min); // Generates random int value from min to max.
 
-    System.out.println("Your new string is:" + celsius + reverse + random_int); // Gives the user their new string with the convertion, the 5-character string, and the random number.
+    System.out.println("Your new string is:" + celsius + reverse + random_int); // Gives the user their new string.
 string.close();
 input.close();
 
