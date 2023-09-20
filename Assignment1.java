@@ -6,6 +6,19 @@ public class Assignment1 {
   //  Prints out initials in big block letters.
   //-------------------------------------------
   public static void main(String[] args) {
+
+    String character;
+    String result;
+    String reverse;
+    double fahrenheit;
+    double celsius;
+    int min;
+    int max;
+    int random_int;
+
+
+
+
     System.out.println("                       "); // Placing space before printing to look cleaner in terminal.
 
     System.out.println("HHHHH    HHHHH   LLLLLL");
@@ -27,9 +40,9 @@ public class Assignment1 {
 
       System.out.println("Please input a degree in Fahrenheit to convert to Celsius: "); // This line is asking for the user to input a number.
 
-      double fahrenheit = input.nextDouble();
+      fahrenheit = input.nextDouble();
 
-      double celsius =(( 5 *(fahrenheit - 32.0)) / 9.0); // Equation for converting F to C.
+      celsius =(( 5 *(fahrenheit - 32.0)) / 9.0); // Equation for converting F to C.
 
     System.out.println("                       ");
 
@@ -39,11 +52,11 @@ public class Assignment1 {
 
     System.out.println("Next, please input a 5-character string:"); //Prompts user for 5 characters.
 
-      String character = input.next();
+      character = input.next();
 
-      String result = character.substring(1,4); // Removes first and last character in the string.
+      result = character.substring(1,4); // Removes first and last character in the string.
 
-      String reverse = new StringBuilder(result).reverse().toString(); // Reverses string.
+      reverse = new StringBuilder(result).reverse().toString(); // Reverses string.
 
       System.out.println("                       ");
 
@@ -55,11 +68,11 @@ public class Assignment1 {
 
     System.out.println("Generating random number...");
 
-      int min = 32; // Minimum value
+      min = 32; // Minimum value
 
-      final int MAX = 16384; // Maximum value
+      max = 16384; // Maximum value
 
-      int random_int = (int)Math.floor(Math.random() * (MAX - min + 1) + min); // Generates random int value from min to max.
+      random_int = (int)Math.floor(Math.random() * (max - min + 1) + min); // Generates random int value from min to max.
 
     // --------------------------------------------------------------------------------------
     //  Finally, this code takes everything and creates a unique string based on user inputs.
