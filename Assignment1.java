@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Random;
+import Math.Random;
 
 public class Assignment1 {
   //----------------------------------------------
@@ -38,6 +38,13 @@ public class Assignment1 {
     String result = character.substring(1,4); // Removes first and last character in the string
 
     System.out.println("Generating random number...");
+
+    int min = 32; // Minimum value of range
+    int max = 16384; // Maximum value of range
+    int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min); // Generates random int value from min to max
+
+    System.out.println("Your new string is:" + celsius + result + random_int);
+
 
 
 
