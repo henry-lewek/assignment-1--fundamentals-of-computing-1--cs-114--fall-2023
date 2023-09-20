@@ -27,7 +27,6 @@ public class Assignment1 {
 
     double  celsius =(( 5 *(fahrenheit - 32.0)) / 9.0); // Equation for converting F to C
 
-    System.out.println("Good job"); // Filler for now; will delete at the end
     System.out.println("                       ");
 
     Scanner string = new Scanner(System.in);
@@ -36,6 +35,7 @@ public class Assignment1 {
     String character = string.nextLine();
 
     String result = character.substring(1,4); // Removes first and last character in the string
+    String reverse = new StringBuilder(result).reverse().toString();
 
     System.out.println("Generating random number...");
 
@@ -43,8 +43,9 @@ public class Assignment1 {
     int max = 16384; // Maximum value of range
     int random_int = (int)Math.floor(Math.random() * (max - min + 1) + min); // Generates random int value from min to max
 
-    System.out.println("Your new string is:" + celsius + result + random_int);
-
+    System.out.println("Your new string is:" + celsius + reverse + random_int); // Gives the user their new string with the convertion, the 5-character string, and the random number.
+string.close();
+input.close();
 
 
 
